@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #07050d;
+  --bg-elevated: #0d0a1c;
+  --bg-card: rgba(255, 255, 255, 0.035);
+  --border-soft: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --violet: #7c5cff;
+  --violet-bright: #a78bff;
+  --blue: #3b82f6;
+  --score: #2fe6b8;
+  --score-glow: rgba(47, 230, 184, 0.35);
+  --text: #f5f3fb;
+  --text-muted: #a7a0c2;
+  --text-faint: #6f6a8a;
+  --font-display: -apple-system, "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-mono-data: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+}
+
+* {
+  border-color: var(--border-soft);
+}
+
+html {
+  background: var(--bg);
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-display);
+  letter-spacing: -0.011em;
+}
+
+.font-data {
+  font-family: var(--font-mono-data);
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  backdrop-filter: blur(16px);
+}
+
+.glow-violet {
+  box-shadow: 0 0 0 1px var(--border-soft), 0 20px 60px -20px rgba(124, 92, 255, 0.35);
+}
+
+.text-gradient {
+  background: linear-gradient(100deg, var(--violet-bright) 0%, #c9bcff 45%, var(--blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
