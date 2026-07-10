@@ -19,7 +19,7 @@ export default function UpgradePopup({ onClose }) {
           </div>
           <h2 className="text-2xl font-bold text-white">Upgrade Your Plan</h2>
           <p className="mt-2 text-gray-400">
-            You've reached your free limit. Upgrade to continue analyzing resumes.
+            You reached your free limit. Upgrade to continue analyzing resumes.
           </p>
           
           <div className="mt-6 space-y-3 text-left">

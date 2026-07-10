@@ -229,7 +229,7 @@ export default function UploadPage() {
                   {!userLimit.canAnalyze && (
                     <div className="mt-4 text-center">
                       <p className="text-sm text-red-400">
-                        You've reached your free limit. 
+                        You reached your free limit. 
                         <button 
                           onClick={() => setShowUpgradePopup(true)}
                           className="ml-2 text-[#7c5cff] hover:underline"

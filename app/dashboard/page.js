@@ -78,7 +78,7 @@ export default function DashboardPage() {
             <h1 className="text-3xl font-bold text-white">
               Welcome back, {user.name}!
             </h1>
-            <p className="text-gray-400 mt-2">Here's your dashboard overview</p>
+         <p className="text-gray-400 mt-2">Here&apos;s your dashboard overview</p>
           </div>
 
           {/* Stats Cards */}
@@ -134,7 +134,7 @@ export default function DashboardPage() {
 
             {!canAnalyze() && user.plan === "Free" && (
               <p className="mt-2 text-sm text-red-400">
-                You've used all 3 free analyses. Upgrade to continue.
+                You used all 3 free analyses. Upgrade to continue.
               </p>
             )}
           </div>
